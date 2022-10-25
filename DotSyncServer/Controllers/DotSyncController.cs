@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-
+using DotSyncServer.Models;
 namespace DotSyncServer.Controllers;
 
 [ApiController]
@@ -16,7 +16,9 @@ public class DotSyncController : ControllerBase
     [HttpGet(Name = "photo")]
     public IActionResult Get()
     {
+        var file = new SyncFile("/Users/fernandozhu/Desktop/hello.avi");
 
-        return Ok("Hello");
+        // return Ok($"MIME: {file.MimeType}");
+        return Ok(file);
     }
 }
