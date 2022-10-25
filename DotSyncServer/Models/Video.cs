@@ -1,4 +1,4 @@
-namespace PhotoSyncServer.Models;
+namespace DotSyncServer.Models;
 
 public class Video : Photo
 {

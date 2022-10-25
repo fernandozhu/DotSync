@@ -1,4 +1,4 @@
-namespace PhotoSyncServer.Models;
+namespace DotSyncServer.Models;
 
 class SyncFile
 {

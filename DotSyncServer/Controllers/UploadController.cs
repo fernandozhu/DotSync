@@ -1,7 +1,7 @@
 
 using Microsoft.AspNetCore.Mvc;
 
-namespace PhotoSyncServer.Controllers;
+namespace DotSyncServer.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

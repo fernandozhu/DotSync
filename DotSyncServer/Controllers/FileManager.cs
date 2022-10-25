@@ -1,4 +1,4 @@
-namespace PhotoSyncServer.Controllers;
+namespace DotSyncServer.Controllers;
 
 class FileManager {
 

@@ -1,14 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace PhotoSyncServer.Controllers;
+namespace DotSyncServer.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class PhotoSyncController : ControllerBase
+public class DotSyncController : ControllerBase
 {
     private readonly ILogger<string> _logger;
 
-    public PhotoSyncController(ILogger<string> logger)
+    public DotSyncController(ILogger<string> logger)
     {
         _logger = logger;
     }

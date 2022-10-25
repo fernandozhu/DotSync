@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "PhotoSyncServer": {
+    "DotSyncServer": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
