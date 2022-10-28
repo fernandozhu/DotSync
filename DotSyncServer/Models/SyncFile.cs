@@ -31,7 +31,14 @@ class SyncFile
             throw new Exception($"No allowed MIME type for file type {this.GetType().Name}");
         }
 
+
+        if (MimeType == null)
+        {
+            return false;
+        }
+
         return AllowedMimeTypes.Contains(MimeType);
+        // return 
     }
 
     private void ExtractFileProperties()
