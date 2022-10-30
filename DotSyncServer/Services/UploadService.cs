@@ -5,21 +5,22 @@ namespace DotSyncServer.Services;
 
 public class UploadService : IUploadService
 {
-    private string _rootFolder;
+    private readonly IFileService _fileService;
 
-    public UploadService(IConfiguration configuration)
+    public UploadService(IFileService fileService)
     {
-        _rootFolder = configuration.GetSection("StorageFolder").Value;
+        _fileService = fileService;
     }
 
 
     public async Task<bool> SaveFile(MultipartReader reader, MultipartSection? section)
     {
         var nextSection = section;
+        string rootFolder = _fileService.GetRootFolder();
 
         while (nextSection != null)
         {
-            nextSection = await SaveFileSection(_rootFolder, reader, nextSection);
+            nextSection = await SaveFileSection(rootFolder, reader, nextSection);
         }
 
         return true;

@@ -4,16 +4,17 @@ namespace DotSyncServer.Services;
 
 public class DownloadService : IDownloadService
 {
-    private string _rootFolder;
+    private IFileService _fileService;
 
-    public DownloadService(IConfiguration configuration)
+    public DownloadService(IFileService fileService)
     {
-        _rootFolder = configuration.GetSection("StorageFolder").Value;
+        _fileService = fileService;
     }
 
     public PhysicalFileResult DownloadFile(string fileName)
     {
-        var filePath = Path.Combine(_rootFolder, fileName);
+        string filePath = _fileService.GetFilePath(fileName);
+        string mimeType = _fileService.GetMimeType(fileName);
 
         if (!File.Exists(filePath))
         {
@@ -21,6 +22,6 @@ public class DownloadService : IDownloadService
         }
 
         // This may not work with large (GBs) file download, need do more testing
-        return new PhysicalFileResult(filePath, "application/octet-stream");
+        return new PhysicalFileResult(filePath, mimeType);
     }
 }

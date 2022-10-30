@@ -4,6 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<IFileService, FileService>();
 builder.Services.AddTransient<IUploadService, UploadService>();
 builder.Services.AddTransient<IDownloadService, DownloadService>();
 
