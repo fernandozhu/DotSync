@@ -9,7 +9,7 @@ public class UploadService : IUploadService
 
     public UploadService(IConfiguration configuration)
     {
-        _rootFolder = configuration.GetSection("Storage").Value;
+        _rootFolder = configuration.GetSection("StorageFolder").Value;
     }
 
 

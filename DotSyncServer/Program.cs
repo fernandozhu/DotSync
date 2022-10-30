@@ -5,6 +5,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IUploadService, UploadService>();
+builder.Services.AddTransient<IDownloadService, DownloadService>();
 
 var app = builder.Build();
 
