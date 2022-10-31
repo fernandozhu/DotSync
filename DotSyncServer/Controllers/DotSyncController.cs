@@ -53,6 +53,6 @@ public class DotSyncController : ControllerBase
     [Route("download/{fileName}")]
     public PhysicalFileResult FileDownload(string fileName)
     {
-        return _downloadService.DownloadFile("phoenix.png");
+        return _downloadService.DownloadFile(fileName);
     }
 }
