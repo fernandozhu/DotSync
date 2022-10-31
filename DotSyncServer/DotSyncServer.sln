@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotSyncServer", "DotSyncServer\DotSyncServer.csproj", "{25EC22BC-FB6C-4A98-879C-69578A7DAAD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotSyncServer.Tests", "DotSyncServer.Tests\DotSyncServer.Tests.csproj", "{F4F4C96E-FE0D-458C-B7CB-8A91ED37CD64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{25EC22BC-FB6C-4A98-879C-69578A7DAAD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25EC22BC-FB6C-4A98-879C-69578A7DAAD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25EC22BC-FB6C-4A98-879C-69578A7DAAD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4F4C96E-FE0D-458C-B7CB-8A91ED37CD64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4F4C96E-FE0D-458C-B7CB-8A91ED37CD64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4F4C96E-FE0D-458C-B7CB-8A91ED37CD64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4F4C96E-FE0D-458C-B7CB-8A91ED37CD64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
