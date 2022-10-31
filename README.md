@@ -1,1 +1,1 @@
-# PhotoSync
+# DocSync
