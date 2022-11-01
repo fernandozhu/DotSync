@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		44A1C07D2910AEF500B6241E /* DotSyncIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1C07C2910AEF500B6241E /* DotSyncIOSApp.swift */; };
-		44A1C07F2910AEF500B6241E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1C07E2910AEF500B6241E /* ContentView.swift */; };
+		44A1C07F2910AEF500B6241E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1C07E2910AEF500B6241E /* MainView.swift */; };
 		44A1C0812910AEF500B6241E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A1C0802910AEF500B6241E /* Assets.xcassets */; };
 		44A1C0842910AEF500B6241E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A1C0832910AEF500B6241E /* Preview Assets.xcassets */; };
 		44A1C0862910AEF500B6241E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1C0852910AEF500B6241E /* Persistence.swift */; };
@@ -16,6 +16,8 @@
 		44A1C0932910AEF600B6241E /* DotSyncIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1C0922910AEF600B6241E /* DotSyncIOSTests.swift */; };
 		44A1C09D2910AEF600B6241E /* DotSyncIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1C09C2910AEF600B6241E /* DotSyncIOSUITests.swift */; };
 		44A1C09F2910AEF600B6241E /* DotSyncIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1C09E2910AEF600B6241E /* DotSyncIOSUITestsLaunchTests.swift */; };
+		44A1C0AE2910B02700B6241E /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1C0AD2910B02700B6241E /* PhotosView.swift */; };
+		44A1C0B02910B03100B6241E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A1C0AF2910B03100B6241E /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 /* Begin PBXFileReference section */
 		44A1C0792910AEF500B6241E /* DotSyncIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotSyncIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A1C07C2910AEF500B6241E /* DotSyncIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotSyncIOSApp.swift; sourceTree = "<group>"; };
-		44A1C07E2910AEF500B6241E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44A1C07E2910AEF500B6241E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		44A1C0802910AEF500B6241E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44A1C0832910AEF500B6241E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44A1C0852910AEF500B6241E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		44A1C0982910AEF600B6241E /* DotSyncIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotSyncIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A1C09C2910AEF600B6241E /* DotSyncIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotSyncIOSUITests.swift; sourceTree = "<group>"; };
 		44A1C09E2910AEF600B6241E /* DotSyncIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotSyncIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		44A1C0AD2910B02700B6241E /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		44A1C0AF2910B03100B6241E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,8 @@
 		44A1C07B2910AEF500B6241E /* DotSyncIOS */ = {
 			isa = PBXGroup;
 			children = (
+				44A1C0AB2910B01400B6241E /* Views */,
 				44A1C07C2910AEF500B6241E /* DotSyncIOSApp.swift */,
-				44A1C07E2910AEF500B6241E /* ContentView.swift */,
 				44A1C0802910AEF500B6241E /* Assets.xcassets */,
 				44A1C0852910AEF500B6241E /* Persistence.swift */,
 				44A1C0872910AEF500B6241E /* DotSyncIOS.xcdatamodeld */,
@@ -131,6 +135,16 @@
 				44A1C09E2910AEF600B6241E /* DotSyncIOSUITestsLaunchTests.swift */,
 			);
 			path = DotSyncIOSUITests;
+			sourceTree = "<group>";
+		};
+		44A1C0AB2910B01400B6241E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44A1C07E2910AEF500B6241E /* MainView.swift */,
+				44A1C0AD2910B02700B6241E /* PhotosView.swift */,
+				44A1C0AF2910B03100B6241E /* SettingsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				44A1C0862910AEF500B6241E /* Persistence.swift in Sources */,
-				44A1C07F2910AEF500B6241E /* ContentView.swift in Sources */,
+				44A1C07F2910AEF500B6241E /* MainView.swift in Sources */,
+				44A1C0AE2910B02700B6241E /* PhotosView.swift in Sources */,
+				44A1C0B02910B03100B6241E /* SettingsView.swift in Sources */,
 				44A1C0892910AEF500B6241E /* DotSyncIOS.xcdatamodeld in Sources */,
 				44A1C07D2910AEF500B6241E /* DotSyncIOSApp.swift in Sources */,
 			);
