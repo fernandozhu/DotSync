@@ -6,24 +6,32 @@
 //
 
 import SwiftUI
+import CoreData
+
 
 struct MainView: View {
+    @Environment(\.managedObjectContext) private var viewContext
+
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+        animation: .default)
+    private var items: FetchedResults<Item>
+    
     var body: some View {
-        
         TabView {
-            ContentView().tabItem {
-                Label("Tab1", systemImage: "list.dash")
+            PhotosView().tabItem {
+                Label("Photos", systemImage: "list.dash")
             }
             
+            SettingsView().tabItem {
+                Label("Settings", systemImage: "list.dash")
+            }
         }
-        
-        
-            Text("main")
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
