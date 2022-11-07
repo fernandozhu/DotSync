@@ -5,11 +5,13 @@
 //  Created by Fernando Zhu on 1/11/22.
 //
 
+import AVFoundation
 import SwiftUI
 
 struct PhotosView: View {
+    
     var body: some View {
-        Text("Photos view")
+        Text("Hello")
     }
 }
 

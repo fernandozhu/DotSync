@@ -19,7 +19,7 @@ struct MainView: View {
     var body: some View {
         TabView {
             PhotosView().tabItem {
-                Label("Hello", systemImage: "list.dash")
+                Label("Hello", systemImage: "photo.on.rectangle.angled")
             }
             SettingsView().tabItem {
                 Label("Settings", systemImage: "list.dash")
